@@ -24,7 +24,7 @@ pipeline {
             steps {
                 sh '''
                   echo 'Test stage'
-                  find -f 'index.html' build/
+                  find build -type f -name "index.html"
                   cat 'build/index.html'
                 '''
             }
