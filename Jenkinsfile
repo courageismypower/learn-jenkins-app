@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        NETLIFY_SITE_ID = 'PUT YOUR NETLIFY SITE ID HERE'
+        NETLIFY_SITE_ID = 'abcdf03b-987e-4199-a052-45d421237336'
         NETLIFY_AUTH_TOKEN = credentials('netlify-token')
     }
 
@@ -103,7 +103,7 @@ pipeline {
             }
 
             environment {
-                CI_ENVIRONMENT_URL = 'https://glittering-seahorse-b07bd1.netlify.app/'
+                CI_ENVIRONMENT_URL = 'https://glittering-seahorse-b07bd1.netlify.app'
             }
 
             steps {
