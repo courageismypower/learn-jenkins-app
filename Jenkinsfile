@@ -8,6 +8,10 @@ pipeline {
 
     stages {
 
+        stage('Docker') {
+            sh 'docker build -t my-playerwright .'
+        }
+
         stage('Build') {
             agent {
                 docker {
